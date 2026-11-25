@@ -42,3 +42,7 @@ Kent smokes on a recteq Flagship 2026 pellet grill and keeps everything in Notio
 
 ## Repo layout
 plans/<date>-<cook>.html, cooks/<date>-<cook>.md, scripts/, skill/SKILL.md
+
+## History
+- 2026-11-15: 17 lb turkey, 5 stars. See cooks/2026-11-15-turkey-17lb.md.
+- 2026-11-26: Thanksgiving, two 13 lb turkeys. Brine in ~6 AM Wed 11/25, pull ~8:30 PM Wed. Plan embedded in the Notion entry. Log results after the cook.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanksgiving Turkey Plan</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f5f7f6; --card: #ffffff; --ink: #1c2a2b; --muted: #5b6b6c; --line: #d9e1e0;
+    --accent: #0e6a63; --accent-soft: #e0f1ef; --heat: #b4540a; --heat-soft: #fdebd9;
+    --display: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --body: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; padding: 24px 16px 32px; }
+  main { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+  h1, h2 { font-family: var(--display); margin: 0; line-height: 1.15; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.1rem; }
+  .sub { color: var(--muted); margin: 6px 0 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .stat .k { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .stat .v { font-family: var(--display); font-size: 1.3rem; font-weight: 700; }
+  .stat.heat .v { color: var(--heat); }
+  ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  ol li { display: grid; grid-template-columns: 92px 1fr; gap: 14px; align-items: start; }
+  .time { font-family: var(--display); font-weight: 700; font-size: 1rem; color: var(--accent); padding-top: 14px; text-align: right; }
+  .step { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 16px; }
+  .step.key { border-left-color: var(--heat); }
+  .step h2 { margin-bottom: 4px; }
+  .step p { margin: 0; }
+  .tag { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); margin-top: 8px; }
+  .tag.heat { background: var(--heat-soft); color: var(--heat); }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .panel h2 { margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  td.num { font-family: var(--display); font-weight: 700; color: var(--heat); }
+  ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  @media (max-width: 460px) {
+    ol li { grid-template-columns: 1fr; gap: 4px; }
+    .time { text-align: left; padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Thanksgiving Turkey Plan</h1>
+    <p class="sub">Two 13 lb turkeys on the recteq. Brined, air-dried, smoked at 225. Dinner at 2:00.</p>
+  </header>
+
+  <section class="stats" aria-label="Key numbers">
+    <div class="stat heat"><div class="k">Grill temp</div><div class="v">225&deg;F</div></div>
+    <div class="stat"><div class="k">On the grill</div><div class="v">8:30 AM</div></div>
+    <div class="stat heat"><div class="k">Expected pull</div><div class="v">12:30&ndash;1:15</div></div>
+    <div class="stat"><div class="k">Carve</div><div class="v">1:45 PM</div></div>
+  </section>
+
+  <ol>
+    <li><div class="time">Wednesday</div><div class="step"><h2>Out of the brine</h2><p>Pull the birds after 14 to 16 hours in the brine. Pat really dry, set each on a rack in a pan, and put them in the fridge uncovered on the bottom shelf. Keep the fridge at or below 40&deg;F.</p><span class="tag">Fridge, uncovered</span></div></li>
+    <li><div class="time">7:45 AM</div><div class="step"><h2>Out of the fridge</h2><p>Push about a cup of butter under the breast skin on each bird. Olive oil and rub on top, lighter on the breast so the crust doesn't scorch. Probe in each breast. Set up the drippings pans with a can of broth plus water.</p></div></li>
+    <li><div class="time">8:00 AM</div><div class="step"><h2>Fire up</h2><p>Preheat the recteq to 225&deg;F with a full smoke.</p><span class="tag">Preheat 225&deg;F</span></div></li>
+    <li><div class="time">8:30 AM</div><div class="step key"><h2>Both birds on</h2><p>Side by side with a little space between them for airflow. Keep the lid closed. Two birds together run slower than one, so expect 4 to 4.5 hours.</p><span class="tag heat">225&deg;F, full smoke</span></div></li>
+    <li><div class="time">11:30 AM</div><div class="step"><h2>Pace check</h2><p>Breasts should be around 130&ndash;135&deg;F. If you're behind, raise the grill to 275&deg;F, not 325. The sugar in the rub burned last time.</p></div></li>
+    <li><div class="time">12:30&ndash;1:15</div><div class="step key"><h2>Pull</h2><p>Pull when the breast reads 160&ndash;165&deg;F. Don't trust the thermometer's time estimates, go by the temp.</p><span class="tag heat">Breast 160&ndash;165&deg;F &middot; Thigh 175&deg;F</span></div></li>
+    <li><div class="time">Hold</div><div class="step"><h2>Keep them hot until carving</h2><p>Wrap in foil and towels and put them in a dry cooler. They stay hot for a couple of hours, so finishing early is fine.</p></div></li>
+    <li><div class="time">1:45 PM</div><div class="step"><h2>Carve, eat at 2:00</h2><p>Save the drippings for gravy.</p></div></li>
+  </ol>
+
+  <section class="panel">
+    <h2>Temps to watch for</h2>
+    <table>
+      <thead><tr><th>Spot</th><th>Pull at</th><th>Where it ends up</th></tr></thead>
+      <tbody>
+        <tr><td>Breast (thickest part)</td><td class="num">160&ndash;165&deg;F</td><td>A few degrees higher after resting</td></tr>
+        <tr><td>Thigh (near the bone)</td><td class="num">175&deg;F</td><td>Tender dark meat</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Lessons from last cook</h2>
+    <ul>
+      <li>A cup of butter under the skin plus the brine gave a very moist breast.</li>
+      <li>At a 225 setting, your grill ran about 235&deg;F and a 17 lb bird took about 5 hours, around 18 minutes a pound.</li>
+      <li>Don't bump the heat out of fear it'll finish early. Hold it in a cooler instead.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkey Day Cook Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* Layout idea: a single light column, a vertical time rail on the left, one card per step. */
+  :root {
+    color-scheme: light;
+    --bg: #f5f7f6;
+    --card: #ffffff;
+    --ink: #1c2a2b;
+    --muted: #5b6b6c;
+    --line: #d9e1e0;
+    --accent: #0e6a63;
+    --accent-soft: #e0f1ef;
+    --heat: #b4540a;
+    --heat-soft: #fdebd9;
+    --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 28px 16px 56px;
+  }
+  main { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+  h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.15rem; }
+  .sub { color: var(--muted); margin: 6px 0 0; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .stat .k { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat .v { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat.heat .v { color: var(--heat); }
+
+  ol.timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  ol.timeline li { display: grid; grid-template-columns: 84px 1fr; gap: 14px; align-items: start; }
+  .time {
+    font-family: var(--font-display); font-weight: 700; font-size: 1.1rem;
+    font-variant-numeric: tabular-nums; color: var(--accent);
+    padding-top: 14px; text-align: right;
+  }
+  .step { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 16px; }
+  .step.key { border-left-color: var(--heat); }
+  .step h2 { margin-bottom: 4px; }
+  .step p { margin: 0; color: var(--ink); }
+  .step p + p { margin-top: 6px; }
+  .tag { display: inline-block; font-size: 0.78rem; font-weight: 600; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); margin-top: 8px; }
+  .tag.heat { background: var(--heat-soft); color: var(--heat); }
+
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .panel h2 { margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  td.num { font-family: var(--font-display); font-weight: 700; color: var(--heat); }
+  ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .foot { color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 460px) {
+    ol.timeline li { grid-template-columns: 1fr; gap: 4px; }
+    .time { text-align: left; padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Turkey Day Cook Plan</h1>
+    <p class="sub">17 lb brined bird on the recteq, whole, hot and fast. Dinner at 5:00.</p>
+  </header>
+
+  <section class="stats" aria-label="Key numbers">
+    <div class="stat heat"><div class="k">Grill temp</div><div class="v">325&ndash;350&deg;F</div></div>
+    <div class="stat"><div class="k">On the grill</div><div class="v">12:00 PM</div></div>
+    <div class="stat"><div class="k">Expected pull</div><div class="v">3:30&ndash;4:00</div></div>
+    <div class="stat"><div class="k">Rest starts</div><div class="v">4:30 PM</div></div>
+  </section>
+
+  <ol class="timeline">
+    <li>
+      <div class="time">10:00 AM</div>
+      <div class="step">
+        <h2>Before church</h2>
+        <p>Take the turkey out of the brine. Pat it really dry, inside and out. If it was a store-bought poultry brine, skip the rinse. If it was a homemade salt brine, a quick rinse is fine.</p>
+        <p>Set it on a rack or sheet pan, uncovered, and put it back in the fridge. The air dry helps the skin crisp and keeps the bird cold while you're gone.</p>
+        <span class="tag">Fridge, uncovered</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">11:30 AM</div>
+      <div class="step">
+        <h2>Home from church, fire it up</h2>
+        <p>Preheat the recteq to 325&deg;F. Rub the turkey with oil or butter and your seasoning. Get a probe in the thickest part of the breast and another in the thigh, away from the bone.</p>
+        <span class="tag">Preheat 325&deg;F</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">12:00 PM</div>
+      <div class="step key">
+        <h2>Turkey goes on</h2>
+        <p>Breast side up, directly on the grates. Keep the lid closed. Every peek can cost you up to 20% of your heat.</p>
+        <p>Expect roughly 13 minutes a pound, so about 3.5 to 3.75 hours for a 17 lb bird.</p>
+        <span class="tag heat">325&ndash;350&deg;F, full smoke</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">3:00 PM</div>
+      <div class="step">
+        <h2>Start checking temps</h2>
+        <p>Probe both the breast and the thigh. If the skin is getting dark before the meat is ready, tent the breast loosely with foil.</p>
+      </div>
+    </li>
+    <li>
+      <div class="time">3:30&ndash;4:00</div>
+      <div class="step key">
+        <h2>Pull it</h2>
+        <p>Pull when the breast reads 160&deg;F and the thigh reads 175&deg;F. Don't wait for 165 in the breast, because carryover will take it there while it rests.</p>
+        <span class="tag heat">Breast 160&deg;F &middot; Thigh 175&deg;F</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">4:30 PM</div>
+      <div class="step">
+        <h2>Rest</h2>
+        <p>Tent loosely with foil for 30 minutes. If it finished early, wrap it in foil and towels and hold it in a dry cooler. It stays hot for a couple of hours.</p>
+        <span class="tag">30 min rest</span>
+      </div>
+    </li>
+    <li>
+      <div class="time">5:00 PM</div>
+      <div class="step">
+        <h2>Carve and eat</h2>
+        <p>Save the drippings for gravy.</p>
+      </div>
+    </li>
+  </ol>
+
+  <section class="panel" aria-labelledby="temps-h">
+    <h2 id="temps-h">Temps to watch for</h2>
+    <table>
+      <thead><tr><th>Spot</th><th>Pull at</th><th>Where it ends up</th></tr></thead>
+      <tbody>
+        <tr><td>Breast (thickest part)</td><td class="num">160&deg;F</td><td>165&deg;F after resting</td></tr>
+        <tr><td>Thigh (near the bone)</td><td class="num">175&deg;F</td><td>Tender dark meat</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel" aria-labelledby="run-h">
+    <h2 id="run-h">If it runs fast or slow</h2>
+    <ul>
+      <li><strong>Running early:</strong> wrap it in foil and towels, then hold it in a dry cooler until 4:30.</li>
+      <li><strong>Running late:</strong> bump the grill to 350&deg;F. Keep the lid closed and trust the probes.</li>
+      <li><strong>Skin dark, meat not done:</strong> tent the breast with foil and keep cooking.</li>
+    </ul>
+  </section>
+
+  <p class="foot">Times are estimates. Go by the probe, not the clock. Sources: recteq Turkey 101, Hey Grill Hey, Traeger, Weber, ThermoWorks.</p>
+</main>
+</body>
+</html>

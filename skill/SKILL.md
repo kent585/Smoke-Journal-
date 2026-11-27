@@ -24,7 +24,7 @@ Kent smokes on a recteq Flagship 2026 pellet grill and keeps everything in Notio
 ## Planning a cook
 1. Get meat and weight, serve time, schedule limits, pellets, rub.
 2. Work backward from serve time: brine, air-dry uncovered in fridge, out-of-fridge time, preheat, on-grill, pace check, pull temp, cooler hold, carve.
-3. Use his grill's real numbers: 225 setting runs ~235F. Last turkey ran ~17-18 min/lb (17 lb took ~5 hrs), plateau 135-150F. Don't bump heat out of fear of finishing early, hold in a cooler. If behind, 275F, not 325F (sweet rub burns).
+3. Use his grill's real numbers: 225 setting runs ~235F. A single 17 lb turkey ran ~17-18 min/lb (~5 hrs). Two 13 lb turkeys in at once ran ~30 min/lb (~6.6 hrs from a cold start at 35F), breast plateau 135-160F. Plan ~6.5 hrs for two birds. Don't bump heat out of fear of finishing early, hold in a cooler. If behind, 275F, not 325F (sweet rub burns).
 4. Turkey defaults: brine ~1 hr/lb (max ~16 hrs salt brine), butter under breast skin, pull breast 160-165F, thigh ~175F.
 5. Research current recommendations (Hey Grill Hey, recteq) when asked and say what they said.
 
@@ -45,4 +45,4 @@ plans/<date>-<cook>.html, cooks/<date>-<cook>.md, scripts/, skill/SKILL.md
 
 ## History
 - 2026-11-15: 17 lb turkey, 5 stars. See cooks/2026-11-15-turkey-17lb.md.
-- 2026-11-26: Thanksgiving, two 13 lb turkeys. Brine in ~6 AM Wed 11/25, pull ~8:30 PM Wed. Plan embedded in the Notion entry. Log results after the cook.
+- 2026-11-26: Thanksgiving, two 13 lb turkeys. 5 stars, best turkey yet. Took ~6.6 hrs, not the 4-4.5 planned. See cooks/2026-11-26-thanksgiving-2x13lb.md.

@@ -1,5 +1,8 @@
 # Thanksgiving, two 13 lb turkeys (2026-11-26) - DONE
 
+- Birds: 13.41 lb and 12.79 lb (store labels, $0.99/lb, use-by 11/30 and 11/27).
+- Photos: photos/2026-11-26-thanksgiving/
+
 - Rating: 5 stars. "Best turkey" yet, so many compliments.
 - Smoker: recteq Flagship 2026 at 225 setting. Brine in the fridge ~6 AM Wed 11/25, out ~8:30 PM (about 14.5 hrs), air-dried uncovered overnight.
 - Probes (Chef iQ, in the breasts) started 7:40 AM at about 35F. Raw data in data/.

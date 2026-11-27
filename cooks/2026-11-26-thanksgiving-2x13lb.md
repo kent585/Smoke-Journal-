@@ -10,9 +10,10 @@
 - Grill ambient averaged about 230 to 260F depending on the probe (probe 1 side ran about 25F hotter). Heat was raised around 1:30 PM and ambient hit about 290 to 330F for the last stretch.
 - Total about 6.6 hrs on the grill, then a 25 min rest. The plan said 4 to 4.5 hrs, so the plan was wrong by about 2 hrs. Two 13 lb birds ran about 30 min/lb versus about 18 min/lb for the single 17 lb bird.
 - Pellets: Lumber Jack Supreme Blend. Rub: mayo binder (not olive oil) + Kinder's Buttery Poultry Blend, light (about 1 tbsp per bird), butter under the breast skin.
-- Not logged yet: what time dinner was served.
+- Dinner: started eating around 3 PM, a bit after the 2:00-2:30 target (birds came off around 2:15 PM, 25 min rest).
 
 ## Lessons
+- Dinner ran about 30-60 min late because of the slower cook. Next time start the grill earlier, or plan the serve time around 6.5 hrs plus rest.
 - With two birds in at once, plan about 6.5 hrs from a cold start (30 min/lb), not 4.5.
 - The 150 to 160F stretch took 1.4 to 1.5 hrs. That's the plateau, not a problem.
 - Still moist and flavorful with a brine, butter under the skin, and a pull at 165F.
